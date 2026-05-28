@@ -59,7 +59,7 @@ class Game:
             webbrowser.open(url)
 
         _toaster.show_toast(
-            "Valorant Stream Yoinker",
+            "Valorant Stream Yoinker + Bomb Timer",
             f"{player.full_name} est en live sur Twitch",
             duration=10,
             threaded=True,

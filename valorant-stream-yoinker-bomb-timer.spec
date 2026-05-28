@@ -1,14 +1,13 @@
 # -*- mode: python ; coding: utf-8 -*-
-# Compilation: depuis la racine du projet:
+# Build from project root:
 #   pip install pyinstaller
-#   pyinstaller valorant-stream-yoinker.spec
-# L'exe sera dans dist/ValorantStreamYoinker.exe
+#   pyinstaller valorant-stream-yoinker-bomb-timer.spec
+# Output: dist/ValorantStreamYoinkerBombTimer.exe
 
 import os
 
 block_cipher = None
 
-# Dossier img (Spike.png) pour le bomb timer - optionnel
 src_dir = os.path.join(SPECPATH, 'src')
 img_dir = os.path.join(src_dir, 'img')
 datas = [(img_dir, 'img')] if os.path.isdir(img_dir) else []
@@ -46,7 +45,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='ValorantStreamYoinker',
+    name='ValorantStreamYoinkerBombTimer',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

@@ -115,8 +115,9 @@ def yoinker_loop():
 
 
 if __name__ == "__main__":
-    print('Valorant Stream Yoinker by https://github.com/deadly')
-    print('(Stream Yoinker + Bomb Timer overlay)')
+    print('Valorant Stream Yoinker + Bomb Timer')
+    print('https://github.com/Sweizeur/valorant-stream-yoinker-bomb-timer')
+    print('Based on https://github.com/deadly/valorant-stream-yoinker')
 
     client = Client(region=DEFAULT_REGION)
     client.activate()
