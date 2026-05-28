@@ -6,8 +6,6 @@ for y in x.iter_lines():
     if y: 
         proxy_list.append({'http': f"socks4://{y.decode().strip()}"})
         
-
-
 agentMap = {}
 
 try:
