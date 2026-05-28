@@ -99,8 +99,8 @@ class Game:
     
     def find_party_members(self, party):
         members = []
-
-        for member in party['Members']:
+        if party is None or not isinstance(party, dict):
+            return members
+        for member in party.get('Members') or []:
             members.append(member['Subject'].lower())
-
         return members
